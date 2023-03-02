@@ -1,0 +1,27 @@
+
+<div class="add-contact-container">
+    <h3 class="title">Add Contact</h3>
+    <form class="add-contact__form ">
+      <div class="add-contact__form-group">
+        <label>
+          Name:
+          <input type="text" #name required>
+        </label>
+      </div>
+      <div class="add-contact__form-group">
+        <label>
+          Email:
+          <input type="email" #email required>
+        </label>
+      </div>
+      <div class="add-contact__form-group">
+        <label>
+          Phone:
+          <input type="tel" #phone required>
+        </label>
+      </div>
+      <div class="add-contact__form-actions">
+        <button type="submit" (click)="addContact(name.value, email.value, phone.value)">Add Contact</button>
+      </div>
+    </form>
+  </div>
